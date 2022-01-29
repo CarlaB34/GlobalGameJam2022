@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Alice
+  - Rabbit
+  - Field
+  - Ennemy
+  - Lazer
+  - Bullet
+  - InteractibleObject
+  - Sol
   layers:
   - Default
   - TransparentFX
