@@ -16,6 +16,9 @@ public class AliceLife : MonoBehaviour
 
     [SerializeField]
     private GameObject particleHit;
+
+    [SerializeField]
+    private GameObject[] HeartsUi;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +32,8 @@ public class AliceLife : MonoBehaviour
         {
             Death();
         }
+
+        HeartsUi[life].SetActive(false);
     }
 
     void Death()
