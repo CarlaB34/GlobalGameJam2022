@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{bb75ba38-7075-4394-a8e9-28e3790343ff}">
 		<property name="assetPath">
-			<value>Miles-away-by-radomir-kirovich.mp3</value>
+			<value>Music/Miles-away-by-radomir-kirovich.mp3</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

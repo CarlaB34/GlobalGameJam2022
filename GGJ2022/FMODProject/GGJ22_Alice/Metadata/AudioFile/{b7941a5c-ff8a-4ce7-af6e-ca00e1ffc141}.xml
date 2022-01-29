@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{b7941a5c-ff8a-4ce7-af6e-ca00e1ffc141}">
 		<property name="assetPath">
-			<value>Infraction-music-control-L2.mp3</value>
+			<value>Music/Infraction-music-control-L2.mp3</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

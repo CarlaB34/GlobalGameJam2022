@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{7b472843-9f7e-48a6-a54a-fdeaec4eb6b3}">
 		<property name="assetPath">
-			<value>Infracion-first-shot-L3.mp3</value>
+			<value>Music/Infracion-first-shot-L3.mp3</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
