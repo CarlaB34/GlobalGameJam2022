@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: FMODProject/GGJ22_Alice/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637790061708217558
+  lastModified: 637790055300000000
   FileSizes:
   - Name: Desktop
     Value: 2592992
@@ -69,7 +69,7 @@ MonoBehaviour:
   - {fileID: -8412939369713171549}
   StringsBanks:
   - {fileID: 558612566751455179}
-  cacheTime: 637790061708217558
+  cacheTime: 637790055300000000
   cacheVersion: 10
 --- !u!114 &558612566751455179
 MonoBehaviour:
@@ -86,7 +86,7 @@ MonoBehaviour:
   Path: FMODProject/GGJ22_Alice/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637790061708217558
+  lastModified: 637790055300000000
   FileSizes:
   - Name: Desktop
     Value: 754
