@@ -19,7 +19,15 @@ public class PlayerControlledPointAndClick : MonoBehaviour
     private List<GameObject> m_InteractibleObjectNULL = new List<GameObject>();
 
     [SerializeField]
-    private AudioSource m_Voice1;
+    private FMODUnity.StudioEventEmitter m_Voice1;
+    [SerializeField]
+    private FMODUnity.StudioEventEmitter m_Voice2;
+    [SerializeField]
+    private FMODUnity.StudioEventEmitter m_Voice3;
+    [SerializeField]
+    private FMODUnity.StudioEventEmitter m_Voice4;
+    [SerializeField]
+    private FMODUnity.StudioEventEmitter m_Voice5;
 
     //[SerializeField]
     //private Animator m_PlayerAnimator;
