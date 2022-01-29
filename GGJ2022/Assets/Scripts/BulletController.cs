@@ -9,6 +9,8 @@ public class BulletController : MonoBehaviour
 
     [SerializeField]
     private bool isLazer;
+    [SerializeField]
+    private GameObject particleHit;
 
     public void InitBullet(Vector3 dir)
     {
@@ -26,7 +28,7 @@ public class BulletController : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Bullet Touch : " + collision.collider.gameObject.name, collision.collider.gameObject);
-
+        Instantiate(particleHit, this.transform.position, Quaternion.identity);
         // Destruction de la bullet
         GameObject.Destroy(gameObject);
     }
