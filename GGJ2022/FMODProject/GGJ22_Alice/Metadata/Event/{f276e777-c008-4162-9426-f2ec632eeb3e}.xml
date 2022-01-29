@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{f276e777-c008-4162-9426-f2ec632eeb3e}">
 		<property name="name">
-			<value>War music</value>
+			<value>WarMusic</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{0850ea25-c7d9-4d18-9f3b-0d7cbcc51627}</destination>
+			<destination>{09dd3a9c-3751-4d44-9713-49294153c277}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{aeb87674-ffb9-429d-8028-bd65870245c4}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{0936d8bf-e6c2-4e9a-ae87-d7480142b676}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{c0456555-2584-4a8f-955e-53702bd5f1c1}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{aeb87674-ffb9-429d-8028-bd65870245c4}">
@@ -86,11 +89,11 @@
 	</object>
 	<object class="MixerBusPanner" id="{ceccd175-c447-431d-a39d-44b5ac854578}" />
 	<object class="SingleSound" id="{4030ac93-3d8b-4d8e-98e7-14350e2fa49f}">
-		<property name="start">
-			<value>5</value>
-		</property>
 		<property name="length">
 			<value>155.03999999999999</value>
+		</property>
+		<property name="volume">
+			<value>-7.5</value>
 		</property>
 		<relationship name="fadeInCurve">
 			<destination>{3642baec-cb03-45c2-aaa7-fcaa4e9cb6b6}</destination>
@@ -137,7 +140,7 @@
 	<object class="MixerBusFader" id="{d8fdfc9a-8372-45c8-8101-f4bae7b8805e}" />
 	<object class="AutomationPoint" id="{33a07231-e7ba-4fff-810d-f036d84d4c85}">
 		<property name="position">
-			<value>5</value>
+			<value>0</value>
 		</property>
 		<property name="value">
 			<value>0</value>
@@ -148,7 +151,7 @@
 	</object>
 	<object class="AutomationPoint" id="{b48bb8bf-107c-4205-969e-2a62ef454ea9}">
 		<property name="position">
-			<value>11</value>
+			<value>6</value>
 		</property>
 		<property name="value">
 			<value>1</value>

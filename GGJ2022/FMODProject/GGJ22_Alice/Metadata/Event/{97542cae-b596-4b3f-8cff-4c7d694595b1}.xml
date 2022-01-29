@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{97542cae-b596-4b3f-8cff-4c7d694595b1}">
 		<property name="name">
-			<value>War Global</value>
+			<value>WarGlobal</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{eb22f2ab-9be5-4cce-a576-a58cffc766c3}</destination>
+			<destination>{09dd3a9c-3751-4d44-9713-49294153c277}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{bca51f00-f052-49e6-b708-c12f4ff559a4}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{fc640ce8-46dc-4e3b-aebf-79e783a44b8b}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{c0456555-2584-4a8f-955e-53702bd5f1c1}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{bca51f00-f052-49e6-b708-c12f4ff559a4}">

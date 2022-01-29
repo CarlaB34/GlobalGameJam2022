@@ -8,7 +8,7 @@
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{eb22f2ab-9be5-4cce-a576-a58cffc766c3}</destination>
+			<destination>{09dd3a9c-3751-4d44-9713-49294153c277}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{e0b4c65a-ff1f-4a07-9da5-64f36346a60b}</destination>
@@ -33,6 +33,9 @@
 		</relationship>
 		<relationship name="parameters">
 			<destination>{d8b974fd-0ffb-457b-9e80-ac2c88bcf2eb}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{c0456555-2584-4a8f-955e-53702bd5f1c1}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{e0b4c65a-ff1f-4a07-9da5-64f36346a60b}">
@@ -61,7 +64,7 @@
 	</object>
 	<object class="EventAutomatableProperties" id="{9b78fa63-fc75-4010-a0ef-2a702269fbab}">
 		<property name="maxVoices">
-			<value>6</value>
+			<value>5</value>
 		</property>
 		<property name="voiceStealing">
 			<value>1</value>
@@ -84,6 +87,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{6cc93192-9167-4d8b-b40f-e195a1276da0}">
+		<property name="volume">
+			<value>-2.79999995</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{e823d8f4-1f64-4afd-8839-9955f64f611c}</destination>
 		</relationship>

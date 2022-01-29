@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="MixerGroup" id="{bf752360-936d-448e-b4b0-00731e8e97b6}">
 		<property name="volume">
-			<value>-3.5</value>
+			<value>-1.5</value>
 		</property>
 		<property name="name">
 			<value>War</value>
@@ -44,19 +44,19 @@
 			<value>9</value>
 		</property>
 		<property name="frequencyA">
-			<value>868.36615</value>
+			<value>1427.7749</value>
 		</property>
 		<property name="frequencyB">
-			<value>98.6033401</value>
+			<value>104.926758</value>
 		</property>
 		<property name="frequencyD">
 			<value>5377.05811</value>
 		</property>
 		<property name="qualityA">
-			<value>0.539551735</value>
+			<value>0.434896529</value>
 		</property>
 		<property name="gainB">
-			<value>9.3103447</value>
+			<value>-0.517240524</value>
 		</property>
 		<property name="gainD">
 			<value>-3.62068939</value>

@@ -8,7 +8,7 @@
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{eb22f2ab-9be5-4cce-a576-a58cffc766c3}</destination>
+			<destination>{09dd3a9c-3751-4d44-9713-49294153c277}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{e7276fcd-ff59-45f8-952d-dfbbab9fefe7}</destination>
@@ -33,6 +33,9 @@
 		</relationship>
 		<relationship name="parameters">
 			<destination>{b614abea-f788-462d-89c7-f96fa72c8469}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{c0456555-2584-4a8f-955e-53702bd5f1c1}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{e7276fcd-ff59-45f8-952d-dfbbab9fefe7}">
@@ -61,7 +64,7 @@
 	</object>
 	<object class="EventAutomatableProperties" id="{d8f6bc97-dd2b-43e5-83e6-bbc0afef9e5d}">
 		<property name="maxVoices">
-			<value>6</value>
+			<value>5</value>
 		</property>
 		<property name="voiceStealing">
 			<value>1</value>
@@ -84,6 +87,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{7bcb6313-8c65-4779-94ad-6302abfc64c0}">
+		<property name="volume">
+			<value>-5.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{dde92873-aacc-4312-a84a-b164471d8e8a}</destination>
 		</relationship>
@@ -130,9 +136,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{8dbed340-7430-44bd-ae67-66feb0fb180e}" />
 	<object class="MultiSound" id="{7936162a-4b55-4c82-b621-8fe5252dc351}">
-		<property name="volume">
-			<value>2</value>
-		</property>
 		<property name="playlistMode">
 			<value>1</value>
 		</property>
@@ -183,6 +186,9 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{bb2c751a-75d6-4eb9-b675-aeebc68e49e6}">
+		<property name="volume">
+			<value>-5.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{8ad3fa97-05cf-4c23-90a1-abc7b5500b3d}</destination>
 		</relationship>
