@@ -16,6 +16,6 @@ public class AliceCameraBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.position = new Vector3(alice.transform.position.x, alice.transform.position.y, alice.transform.position.z);
+        this.transform.position = new Vector3(0,0, alice.transform.position.z);
     }
 }
