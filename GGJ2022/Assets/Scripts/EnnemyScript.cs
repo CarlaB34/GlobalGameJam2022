@@ -27,6 +27,23 @@ public class EnnemyScript : MonoBehaviour
     private float maxLife;
     private float life;
 
+    [SerializeField]
+    private float distanceToStop;
+
+    [SerializeField]
+    private bool isDistanceEnnemy;
+    [SerializeField]
+    private GameObject contactAttack;
+
+    [SerializeField]
+    private GameObject particleHitLazer;
+
+    [SerializeField]
+    private GameObject slownessParticle;
+
+    private bool isOnSlowZone;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +70,28 @@ public class EnnemyScript : MonoBehaviour
             Death();
         }
 
+        double distancePlayer = (double)Vector3.Distance(this.Alice.transform.position, this.transform.position);
+
+        if (distancePlayer < distanceToStop)
+        {
+            navMesh.speed = 0;
+
+            if(!isDistanceEnnemy)
+            {
+                contactAttack.SetActive(true);
+            }
+
+        }
+
+        if (distancePlayer > distanceToStop + 1 && !isOnSlowZone)
+        {
+            navMesh.speed = speed;
+            if (!isDistanceEnnemy)
+            {
+                contactAttack.SetActive(false);
+            }
+        }
+
     }
 
    
@@ -61,11 +100,14 @@ public class EnnemyScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Field")
         {
-            navMesh.speed = navMesh.speed / 2;
+            isOnSlowZone = true;
+            slownessParticle.SetActive(true);
+            navMesh.speed = speed / 2;
         }
 
         if (other.gameObject.tag == "Lazer")
         {
+            Instantiate(particleHitLazer, this.transform.position, Quaternion.identity);
             life = life - AliceVise.degats;
             Debug.Log(life);
         }
@@ -75,6 +117,8 @@ public class EnnemyScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Field")
         {
+            isOnSlowZone = false;
+            slownessParticle.SetActive(false);
             navMesh.speed = speed;
         }
     }

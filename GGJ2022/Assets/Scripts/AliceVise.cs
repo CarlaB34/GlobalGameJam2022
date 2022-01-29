@@ -34,10 +34,16 @@ public class AliceVise : MonoBehaviour
     void Update()
     {
         ennemy = GameObject.FindWithTag("Ennemy");
-        Vector3 targetPostition = new Vector3(ennemy.transform.position.x, this.transform.position.y, ennemy.transform.position.z);
+
+        if(ennemy != null)
+        {
+            Vector3 targetPostition = new Vector3(ennemy.transform.position.x, this.transform.position.y, ennemy.transform.position.z);
+            transform.LookAt(targetPostition);
+        }
+ 
 
         jauge.value += Time.deltaTime;
-        transform.LookAt(targetPostition);
+       
 
         degats = jauge.value;
 
