@@ -37,6 +37,7 @@ public class CarotField : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.Mouse1))
         {
+            
             timeToDoAttack = 0.25f;
             push.SetActive(true);
 

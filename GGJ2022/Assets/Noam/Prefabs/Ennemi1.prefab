@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7889453460395169886}
   m_Layer: 0
   m_Name: Ennemi1
-  m_TagString: Untagged
+  m_TagString: Ennemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33,6 +33,7 @@ Transform:
   m_Children:
   - {fileID: 5167149160911181512}
   - {fileID: 8305515946009287216}
+  - {fileID: 3732553462290144512}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -70,7 +71,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8667752c0047a6841922f37c290464fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  originAttack: {fileID: 3732553462290144512}
   speed: 4
+  timeToInstantiateBullet: 1
+  bullet: {fileID: 4215981210656194043, guid: 2786c9312405cf5468b80e15095d86d4, type: 3}
+  maxLife: 1
 --- !u!54 &2399039494612764061
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -100,6 +105,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &2111655653563567288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3732553462290144512}
+  m_Layer: 0
+  m_Name: OriginAttack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3732553462290144512
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111655653563567288}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.563, z: 1.337}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7107664108697089536}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4042313764951396980
 GameObject:
   m_ObjectHideFlags: 0

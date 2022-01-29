@@ -5,12 +5,21 @@ using UnityEngine;
 public class BulletController : MonoBehaviour
 {
     public float multForceBullet = 1;
-    public static int degats = 1;
+    public static float degats = 1;
+
+    [SerializeField]
+    private bool isLazer;
+
     public void InitBullet(Vector3 dir)
     {
         Rigidbody rigidBodyBullet = GetComponent<Rigidbody>();
 
         rigidBodyBullet.AddForce(dir * multForceBullet);
+
+        if(isLazer)
+        {
+            degats = AliceVise.degats;
+        }
     }
 
 
