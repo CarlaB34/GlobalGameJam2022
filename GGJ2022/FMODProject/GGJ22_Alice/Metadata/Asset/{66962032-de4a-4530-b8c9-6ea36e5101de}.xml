@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{66962032-de4a-4530-b8c9-6ea36e5101de}">
+		<property name="assetPath">
+			<value>War/Mitraille/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{28fd406f-a2a4-478a-864b-7e3d58306b80}</destination>
+		</relationship>
+	</object>
+</objects>

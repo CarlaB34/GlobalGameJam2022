@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{058da03e-63de-4b9c-aab1-1814d62b014a}">
+		<property name="assetPath">
+			<value>War/Mitraille/245602__unfa__distant-machinegun-series.flac</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>11.689916666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{28fd406f-a2a4-478a-864b-7e3d58306b80}</destination>
+		</relationship>
+	</object>
+</objects>

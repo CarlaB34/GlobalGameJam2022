@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{13dfd27f-7d2c-4d17-8a53-bcf71fd33277}">
+		<property name="assetPath">
+			<value>War/Mitraille/417685__superphat__dry-assault-rifle-automatic-02.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.2693333333333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{28fd406f-a2a4-478a-864b-7e3d58306b80}</destination>
+		</relationship>
+	</object>
+</objects>
