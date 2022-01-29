@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485127764711007657}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -56.857117, y: -2.3453994, z: 33.069862}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5167149160911181512}
@@ -74,7 +74,7 @@ MonoBehaviour:
   speed: 6
   timeToInstantiateBullet: 0
   bullet: {fileID: 0}
-  maxLife: 1
+  maxLife: 30
 --- !u!54 &6438039697314710636
 Rigidbody:
   m_ObjectHideFlags: 0

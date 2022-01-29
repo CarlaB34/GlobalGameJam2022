@@ -169,7 +169,7 @@ MonoBehaviour:
   speed: 3
   timeToInstantiateBullet: 0
   bullet: {fileID: 0}
-  maxLife: 1
+  maxLife: 5
 --- !u!54 &3309603203827731988
 Rigidbody:
   m_ObjectHideFlags: 0

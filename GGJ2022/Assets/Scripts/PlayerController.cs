@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
         // Vecteur pour la direction du mouvement
         Vector3 moveDir = Vector3.zero;
         // On recupère les inputs droite/gauche et on applique sur l'axe Z
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D))
         {
             moveDir.z = 1;
 
@@ -39,43 +39,43 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.Q))
         {
             moveDir.z = -1;
    
         }
 
         // On recupère les inputs haut/bas et on applique sur l'axe X
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.S))
         {
             moveDir.x = 1;
           
         }
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.Z))
         {
             moveDir.x = -1;
           
         }
 
-        if (Input.GetKeyUp(KeyCode.UpArrow))
+        if (Input.GetKeyUp(KeyCode.Z))
         {
             moveDir.x = -1;
            
         }
 
-        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        if (Input.GetKeyUp(KeyCode.Q))
         {
             moveDir.x = -1;
            
         }
 
-        if (Input.GetKeyUp(KeyCode.DownArrow))
+        if (Input.GetKeyUp(KeyCode.S))
         {
             moveDir.x = -1;
            
         }
 
-        if (Input.GetKeyUp(KeyCode.RightArrow))
+        if (Input.GetKeyUp(KeyCode.D))
         {
             moveDir.x = -1;
          

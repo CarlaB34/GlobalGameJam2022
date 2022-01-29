@@ -75,7 +75,7 @@ MonoBehaviour:
   speed: 4
   timeToInstantiateBullet: 1
   bullet: {fileID: 4215981210656194043, guid: 2786c9312405cf5468b80e15095d86d4, type: 3}
-  maxLife: 1
+  maxLife: 10
 --- !u!54 &2399039494612764061
 Rigidbody:
   m_ObjectHideFlags: 0

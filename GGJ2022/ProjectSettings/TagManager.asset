@@ -8,6 +8,8 @@ TagManager:
   - Rabbit
   - Field
   - Ennemy
+  - Lazer
+  - Bullet
   layers:
   - Default
   - TransparentFX

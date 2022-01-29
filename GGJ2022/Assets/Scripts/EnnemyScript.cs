@@ -56,19 +56,18 @@ public class EnnemyScript : MonoBehaviour
     }
 
    
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.tag == "Lazer")
-        {
-            life = life - AliceVise.degats;
-            Debug.Log(life);
-        }
-    }
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Field")
         {
             navMesh.speed = navMesh.speed / 2;
+        }
+
+        if (other.gameObject.tag == "Lazer")
+        {
+            life = life - AliceVise.degats;
+            Debug.Log(life);
         }
     }
 

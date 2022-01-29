@@ -19,6 +19,11 @@ public class AliceVise : MonoBehaviour
     [SerializeField]
     private GameObject newBullet;
 
+    [SerializeField]
+    private float timerBeforeResetValueLazer;
+    [SerializeField]
+    private bool hasLaunchedLazer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +44,19 @@ public class AliceVise : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space))
         {
             CreateAttack(newBullet);
+            hasLaunchedLazer = true;
+        }
 
+        if(hasLaunchedLazer)
+        {
+            timerBeforeResetValueLazer -= Time.deltaTime;
+        }
+
+        if(timerBeforeResetValueLazer <= 0)
+        {
+            jauge.value = 0;
+            hasLaunchedLazer = false;
+            timerBeforeResetValueLazer = 1;
         }
     }
 
