@@ -47,6 +47,12 @@ public class PlayerControlledPointAndClick : MonoBehaviour
     //voie du jutbox (element narratif)
     [SerializeField]
     private FMODUnity.StudioEventEmitter m_Voice5;
+
+    [SerializeField]
+    private FMODUnity.StudioEventEmitter m_JukeboxMusic;
+
+    [SerializeField]
+    private FMODUnity.StudioEventEmitter m_GlobalMusic;
     #endregion
 
     [SerializeField]
@@ -182,10 +188,19 @@ public class PlayerControlledPointAndClick : MonoBehaviour
 
                 //element 2
                 case "gramo":
-                    m_Voice5.Play();
-                    m_Voice5.IsPlaying();
-                    //m_IsVoice = true;
-                   // Debug.Log("jutbox");
+
+                    if (m_JukeboxMusic.IsPlaying())
+                    {
+                        m_GlobalMusic.Play();
+                        m_JukeboxMusic.Stop();
+                    }
+                    else
+                    {
+                        m_JukeboxMusic.Play();
+                        m_GlobalMusic.Stop();
+                        m_Voice5.Play();
+                        m_Voice5.IsPlaying();
+                    }
                     break;
             }
         }

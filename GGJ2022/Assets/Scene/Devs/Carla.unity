@@ -5240,6 +5240,8 @@ MonoBehaviour:
   m_Voice3: {fileID: 2074248093}
   m_Voice4: {fileID: 1297464851}
   m_Voice5: {fileID: 53269501}
+  m_JukeboxMusic: {fileID: 2051685768}
+  m_GlobalMusic: {fileID: 898039850}
   m_IsVoice: 0
   m_PlayerAnimator: {fileID: 1437960331}
 --- !u!136 &210649505
@@ -6925,7 +6927,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &898039850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9257,6 +9259,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0005675, y: 0.00058727997, z: 0.00067948026}
   m_Center: {x: 0.000073240015, y: 0.000092949755, z: 0.00033729008}
+--- !u!114 &2051685768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051685762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1486732879
+      Data2: 1268241031
+      Data3: -1585896317
+      Data4: 468238946
+    Path: event:/Musics/MusicJukebox
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2074248088
 GameObject:
   m_ObjectHideFlags: 0
