@@ -49,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   multForceBullet: 2000
   isLazer: 0
+  particleHit: {fileID: 7887301734148523371, guid: f1a6be7fc58f38142a451fbc08057a2a, type: 3}
 --- !u!54 &4215981210656194045
 Rigidbody:
   m_ObjectHideFlags: 0
