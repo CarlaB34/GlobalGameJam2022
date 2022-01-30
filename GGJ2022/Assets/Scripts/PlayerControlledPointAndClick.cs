@@ -54,60 +54,39 @@ public class PlayerControlledPointAndClick : MonoBehaviour
 
     private static int m_PassageDansScene = 0;
 
-    //[SerializeField]
-    //private Animator m_PlayerAnimator;
+    [SerializeField]
+    private Animator m_PlayerAnimator;
 
     private void Start()
     {
-        Debug.Log("passage augmente pour int0 start: " + m_PassageDansScene);
-
+       
         m_InteractibleObject[1].SetActive(false);
-        Debug.Log("winstart condition dans PC : " + WinCondition.isWinning);
         m_InteractibleObject[2].SetActive(false);
     }
 
     private void Update()
     {
         ClickMove();
+        AnimMove();
         // on  verifie a l'updta si ma voie est active
         VoiceActiveUtile();
-        Debug.Log("passage augmente pour int0: " + m_PassageDansScene);
-        Debug.Log("winupdate condition dans PC : " + WinCondition.isWinning);
 
+        #region switch scene with element
         if (WinCondition.isWinning == true && m_PassageDansScene == 0)
         {
-            m_InteractibleObject[1].SetActive(true);
-                m_PassageDansScene += 1;
+            m_InteractibleObject[2].SetActive(true);
+               // m_PassageDansScene += 1;
                 WinCondition.isWinning = false;
-                Debug.Log("interagible1");
-            //if (m_PassageDansScene == 1)
-            //{
-            //    Debug.Log("interagible2");
-            //    m_InteractibleObject[2].SetActive(true);
-            //    //WinCondition.isWinning = false;
-            //    Debug.Log("interagible2");
-            //}
-
         }
-        if (WinCondition.isWinning == true && m_PassageDansScene == 1)
+        /*if (WinCondition.isWinning == true && m_PassageDansScene == 1)
         {
-            Debug.Log("interagible2");
+         
             m_InteractibleObject[2].SetActive(true);
             //WinCondition.isWinning = false;
-            Debug.Log("interagible2");
-        }
+          
+        }*/
+        #endregion
     }
-            /*if(m_Player.velocity != Vector3.zero)
-            {
-                m_PlayerAnimator.SetBool("isWalking", true);
-            }
-            else if (m_Player.velocity == Vector3.zero)
-            {
-                m_PlayerAnimator.SetBool("isWalking", false);
-
-            }*/
-        
-
     private void ClickMove()
     {
         //quand je click sur mon button gauche de la souris
@@ -132,6 +111,19 @@ public class PlayerControlledPointAndClick : MonoBehaviour
                 //si un element de ma liste contient un element que l'on touche de typ gameobjec
                 InteragibleobjectNull(l_HitRayPoint);
             }
+        }
+    }
+
+    private void AnimMove()
+    {
+        if(m_PlayerNav.velocity != Vector3.zero)
+        {
+            m_PlayerAnimator.SetBool("IsWalking", true);
+        }
+        else if (this.transform.position.x == m_TargetDestination.transform.position.x && this.transform.position.z == m_TargetDestination.transform.position.z)
+        {
+            Debug.Log("Alice est a la meme position que la destination!");
+            m_PlayerAnimator.SetBool("IsWalking", false);
         }
     }
 
@@ -189,11 +181,11 @@ public class PlayerControlledPointAndClick : MonoBehaviour
                     break;
 
                 //element 2
-                case "JutBox":
+                case "gramo":
                     m_Voice5.Play();
                     m_Voice5.IsPlaying();
                     //m_IsVoice = true;
-                    //Debug.Log("jutbox");
+                   // Debug.Log("jutbox");
                     break;
             }
         }
