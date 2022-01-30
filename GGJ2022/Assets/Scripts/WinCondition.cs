@@ -9,6 +9,8 @@ public class WinCondition : MonoBehaviour
     public static bool isWinningLvlTwo;
     public static bool isWinningLvlThree;
 
+    [SerializeField]
+    private int originalNumberOfEnnemies;
     public static int numberOfEnnemiesToWin;
 
     private float timeBeforeTheScene = 3;
@@ -25,7 +27,8 @@ public class WinCondition : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        numberOfEnnemiesToWin = 5;
+
+        numberOfEnnemiesToWin = originalNumberOfEnnemies;
     }
 
     // Update is called once per frame
