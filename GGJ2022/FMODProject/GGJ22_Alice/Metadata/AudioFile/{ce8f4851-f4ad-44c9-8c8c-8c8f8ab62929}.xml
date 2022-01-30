@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ce8f4851-f4ad-44c9-8c8c-8c8f8ab62929}">
+		<property name="assetPath">
+			<value>Music/Infraction-insanely-evil-L2.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>218.03999999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{28fd406f-a2a4-478a-864b-7e3d58306b80}</destination>
+		</relationship>
+	</object>
+</objects>

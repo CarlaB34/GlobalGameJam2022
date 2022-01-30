@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{5f232f59-a5f0-47c6-937e-b0c44b00804c}">
+		<property name="assetPath">
+			<value>War/Fusil/BL-FREE26 Guns Designed Beretta M9.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>4.2536979166666669</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{28fd406f-a2a4-478a-864b-7e3d58306b80}</destination>
+		</relationship>
+	</object>
+</objects>
