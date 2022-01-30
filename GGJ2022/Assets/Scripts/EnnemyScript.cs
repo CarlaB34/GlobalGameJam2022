@@ -137,6 +137,7 @@ public class EnnemyScript : MonoBehaviour
 
     private void Death()
     {
+        WinCondition.numberOfEnnemiesToWin -= 1;
         GameObject.Destroy(gameObject);
     }
 
