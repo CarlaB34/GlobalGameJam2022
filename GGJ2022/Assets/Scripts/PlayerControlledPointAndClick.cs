@@ -16,11 +16,11 @@ public class PlayerControlledPointAndClick : MonoBehaviour
     private ParticleSystem m_EffectTargetDesti;
     #endregion
 
-#region objet interaction
+    #region objet interaction
     //objet qui quand on va interagir avec va laisser les differents niveau
     [SerializeField]
     private List<GameObject> m_InteractibleObject = new List<GameObject>();
- 
+
     //objet qui quand on interagi avec, ils vont nous apporté des éléments scénaristique
     //permet aussi de favorisé et pratique le point and click
     [SerializeField]
@@ -51,26 +51,62 @@ public class PlayerControlledPointAndClick : MonoBehaviour
 
     [SerializeField]
     private bool m_IsVoice = false;
+
+    private static int m_PassageDansScene = 0;
+
     //[SerializeField]
     //private Animator m_PlayerAnimator;
+
+    private void Start()
+    {
+        Debug.Log("passage augmente pour int0 start: " + m_PassageDansScene);
+
+        m_InteractibleObject[1].SetActive(false);
+        Debug.Log("winstart condition dans PC : " + WinCondition.isWinning);
+        m_InteractibleObject[2].SetActive(false);
+    }
 
     private void Update()
     {
         ClickMove();
         // on  verifie a l'updta si ma voie est active
         VoiceActiveUtile();
-      
-        
-        /*if(m_Player.velocity != Vector3.zero)
-        {
-            m_PlayerAnimator.SetBool("isWalking", true);
-        }
-        else if (m_Player.velocity == Vector3.zero)
-        {
-            m_PlayerAnimator.SetBool("isWalking", false);
+        Debug.Log("passage augmente pour int0: " + m_PassageDansScene);
+        Debug.Log("winupdate condition dans PC : " + WinCondition.isWinning);
 
-        }*/
+        if (WinCondition.isWinning == true && m_PassageDansScene == 0)
+        {
+            m_InteractibleObject[1].SetActive(true);
+                m_PassageDansScene += 1;
+                WinCondition.isWinning = false;
+                Debug.Log("interagible1");
+            //if (m_PassageDansScene == 1)
+            //{
+            //    Debug.Log("interagible2");
+            //    m_InteractibleObject[2].SetActive(true);
+            //    //WinCondition.isWinning = false;
+            //    Debug.Log("interagible2");
+            //}
+
+        }
+        if (WinCondition.isWinning == true && m_PassageDansScene == 1)
+        {
+            Debug.Log("interagible2");
+            m_InteractibleObject[2].SetActive(true);
+            //WinCondition.isWinning = false;
+            Debug.Log("interagible2");
+        }
     }
+            /*if(m_Player.velocity != Vector3.zero)
+            {
+                m_PlayerAnimator.SetBool("isWalking", true);
+            }
+            else if (m_Player.velocity == Vector3.zero)
+            {
+                m_PlayerAnimator.SetBool("isWalking", false);
+
+            }*/
+        
 
     private void ClickMove()
     {
@@ -114,19 +150,19 @@ public class PlayerControlledPointAndClick : MonoBehaviour
                     m_Voice1.Play();
                     m_Voice1.IsPlaying();
                     m_IsVoice = true;
-                        break;
+                    break;
 
                 //element 2
                 case "JournalIntime":
                     m_Voice3.Play();
                     m_Voice3.IsPlaying();
                     m_IsVoice = true;
-                    Debug.Log("journal");
+                    //Debug.Log("journal");
                     break;
 
                 //element 3
                 case "LivreDechirer":
-                    Debug.Log("livre");
+                    //Debug.Log("livre");
                     m_Voice4.Play();
                     m_Voice4.IsPlaying();
                     m_IsVoice = true;
@@ -134,7 +170,7 @@ public class PlayerControlledPointAndClick : MonoBehaviour
 
             }
         }
-        
+
     }
 
     private void InteragibleobjectNull(RaycastHit p_RaycastHit)
@@ -148,7 +184,7 @@ public class PlayerControlledPointAndClick : MonoBehaviour
                     m_Voice2.Play();
                     m_Voice2.IsPlaying();
                     //m_IsVoice = true;
-                    Debug.Log("papa");
+                    // Debug.Log("fenetre");
 
                     break;
 
@@ -157,7 +193,7 @@ public class PlayerControlledPointAndClick : MonoBehaviour
                     m_Voice5.Play();
                     m_Voice5.IsPlaying();
                     //m_IsVoice = true;
-                    Debug.Log("journal");
+                    //Debug.Log("jutbox");
                     break;
             }
         }
@@ -170,9 +206,9 @@ public class PlayerControlledPointAndClick : MonoBehaviour
         if (m_IsVoice == true && m_Voice1.IsActive == true)
         {
             //on verifie ensuite si ma specifi voie est fause(terminer de se jouer) pour changer de scene
-            if (m_Voice1.IsPlaying() == false )
+            if (m_Voice1.IsPlaying() == false)
             {
-                Debug.Log("papa");
+                //Debug.Log("papaS");
                 SceneManager.LoadScene("Noam");
             }
         }
@@ -180,16 +216,16 @@ public class PlayerControlledPointAndClick : MonoBehaviour
         {
             if (m_Voice3.IsPlaying() == false)
             {
-                Debug.Log("journal");
-                SceneManager.LoadScene("Noam");
+                // Debug.Log("journalS");
+                SceneManager.LoadScene("L2");
             }
         }
         if (m_IsVoice == true && m_Voice4.IsActive == true)
         {
             if (m_Voice4.IsPlaying() == false)
             {
-                Debug.Log("livre");
-                SceneManager.LoadScene("Noam");
+                // Debug.Log("livreS");
+                SceneManager.LoadScene("L3");
             }
         }
     }

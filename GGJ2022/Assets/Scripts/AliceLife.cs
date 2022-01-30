@@ -16,9 +16,20 @@ public class AliceLife : MonoBehaviour
 
     [SerializeField]
     private GameObject particleHit;
+    [SerializeField]
+    private GameObject AliceVisual;
 
     [SerializeField]
     private GameObject[] HeartsUi;
+
+    private float timeBeforeTheScene = 3;
+    private bool isDead;
+
+    [SerializeField]
+    private GameObject tr2;
+
+    [SerializeField]
+    private string nameOfNextScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,18 +39,32 @@ public class AliceLife : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(life <= 0)
+        if(life <= 0 && timeBeforeTheScene >= 2.95)
         {
             Death();
         }
+        if(isDead)
+        {
+            timeBeforeTheScene -= Time.deltaTime;
+        }
 
+        if(timeBeforeTheScene <= 1)
+        {
+            tr2.SetActive(true);
+        }
+        if (timeBeforeTheScene <= 0)
+        {
+            SceneManager.LoadScene(nameOfNextScene);
+        }
         HeartsUi[life].SetActive(false);
     }
 
     void Death()
     {
+        WinCondition.isWinning = false;
+        isDead = true;
         Instantiate(particleDeath, this.transform.position, Quaternion.identity);
-        GameObject.Destroy(gameObject);
+        GameObject.Destroy(AliceVisual);
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scene/Devs/MainMenu.unity
     guid: c1c21bfdf9d626e4e80a2c7f130805c1
@@ -17,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Devs/Noam.unity
     guid: ac641e8d0cb598a46b27e9cdfa1654af
+  - enabled: 1
+    path: Assets/Scene/Devs/L2.unity
+    guid: 9fbaddae259ee9a4fa6b8e47b0f68d8b
+  - enabled: 1
+    path: Assets/Scene/Devs/L3.unity
+    guid: d58f07d8cd1813c48a6dc8f2b6d2a44e
   m_configObjects: {}
