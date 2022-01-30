@@ -109,7 +109,7 @@ public class EnnemyScript : MonoBehaviour
         {
             Instantiate(particleHitLazer, this.transform.position, Quaternion.identity);
             life = life - AliceVise.degats;
-            Debug.Log(life);
+            //Debug.Log(life);
         }
     }
 
