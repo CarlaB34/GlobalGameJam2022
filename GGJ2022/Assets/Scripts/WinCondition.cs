@@ -21,16 +21,22 @@ public class WinCondition : MonoBehaviour
     void Start()
     {
         numberOfEnnemiesToWin = 5;
+        isWinning = false;
+        Debug.Log("win bool start: " + isWinning);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(numberOfEnnemiesToWin <= 0)
+            Debug.Log("win bool update: " + isWinning);
+
+        if (numberOfEnnemiesToWin <= 0)
         {
             Win();
+            Debug.Log("tuer enemy");
         }
-
+       
         if (hasWinState)
         {
             timeBeforeTheScene -= Time.deltaTime;
