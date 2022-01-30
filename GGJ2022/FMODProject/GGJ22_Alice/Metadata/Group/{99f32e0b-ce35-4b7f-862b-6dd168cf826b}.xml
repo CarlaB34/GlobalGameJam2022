@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="MixerGroup" id="{99f32e0b-ce35-4b7f-862b-6dd168cf826b}">
+		<property name="volume">
+			<value>-10.1000004</value>
+		</property>
 		<property name="name">
 			<value>Ennemies effects</value>
+		</property>
+		<property name="maxInstances">
+			<value>8</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{6f48d5ca-f138-46d6-b15a-21c241055993}</destination>
