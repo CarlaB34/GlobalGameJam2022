@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnnemiesSpawner : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class EnnemiesSpawner : MonoBehaviour
 
     [SerializeField]
     private GameObject[] ennemies;
+    public Text ennemyText;
 
 
     // Start is called before the first frame update
@@ -25,6 +27,12 @@ public class EnnemiesSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(WinCondition.numberOfEnnemiesToWin >= 0)
+        {
+            ennemyText.text = $"{ WinCondition.numberOfEnnemiesToWin}";
+        }
+        
+        originalTimerToInstantiate -= Time.deltaTime / 200;
         timerToInstantiate -= Time.deltaTime;
         if (timerToInstantiate <= 0)
         {
