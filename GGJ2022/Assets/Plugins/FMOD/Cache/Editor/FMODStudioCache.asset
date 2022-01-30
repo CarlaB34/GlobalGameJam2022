@@ -1,32 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8727602630731567736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Test
-  m_EditorClassIdentifier: 
-  Path: event:/Test
-  Guid:
-    Data1: 1068717876
-    Data2: 1078023322
-    Data3: -1963476864
-    Data4: 694424247
-  Banks:
-  - {fileID: -8412939369713171549}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 193250
 --- !u!114 &-8412939369713171549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,11 +15,139 @@ MonoBehaviour:
   Path: FMODProject/GGJ22_Alice/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637790061708217558
+  lastModified: 637791435425848393
   FileSizes:
   - Name: Desktop
-    Value: 2592992
+    Value: 5467072
   Exists: 1
+--- !u!114 &-6886540144097386760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/WarAmbiance/WarMusic
+  m_EditorClassIdentifier: 
+  Path: event:/WarAmbiance/WarMusic
+  Guid:
+    Data1: -227088521
+    Data2: 1096990728
+    Data3: -319674732
+    Data4: 1055600227
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 155040
+--- !u!114 &-6310162374592498044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Voice.bank
+  m_EditorClassIdentifier: 
+  Path: FMODProject/GGJ22_Alice/Build/Desktop/Voice.bank
+  Name: Voice
+  StudioPath: bank:/Voice
+  lastModified: 637791435425885117
+  FileSizes:
+  - Name: Desktop
+    Value: 187232
+  Exists: 1
+--- !u!114 &-5911852421135584484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voice/Voix 3
+  m_EditorClassIdentifier: 
+  Path: event:/Voice/Voix 3
+  Guid:
+    Data1: -29830167
+    Data2: 1255054562
+    Data3: 450803872
+    Data4: 2121545390
+  Banks:
+  - {fileID: -6310162374592498044}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3456
+--- !u!114 &-458043439281635322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/WarAmbiance/WarGlobal
+  m_EditorClassIdentifier: 
+  Path: event:/WarAmbiance/WarGlobal
+  Guid:
+    Data1: -1756091218
+    Data2: 1262466454
+    Data3: 2102198156
+    Data4: -1315617431
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 70240
+--- !u!114 &-199544079398816154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voice/Voix 5
+  m_EditorClassIdentifier: 
+  Path: event:/Voice/Voix 5
+  Guid:
+    Data1: 551377127
+    Data2: 1323334588
+    Data3: -192879443
+    Data4: 2063209879
+  Banks:
+  - {fileID: -6310162374592498044}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4629
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,14 +163,25 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 558612566751455179}
   - {fileID: -8412939369713171549}
+  - {fileID: -6310162374592498044}
   EditorEvents:
-  - {fileID: -8727602630731567736}
+  - {fileID: 3199011105151283377}
+  - {fileID: 4187346955221437689}
+  - {fileID: -6886540144097386760}
+  - {fileID: 4058172453879740652}
+  - {fileID: -458043439281635322}
+  - {fileID: 8155754262666167654}
+  - {fileID: 2360261087244332681}
+  - {fileID: 1359932274032812448}
+  - {fileID: 2942114386369543378}
+  - {fileID: -199544079398816154}
+  - {fileID: -5911852421135584484}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8412939369713171549}
   StringsBanks:
   - {fileID: 558612566751455179}
-  cacheTime: 637790061708217558
+  cacheTime: 637791435425885117
   cacheVersion: 10
 --- !u!114 &558612566751455179
 MonoBehaviour:
@@ -86,8 +198,225 @@ MonoBehaviour:
   Path: FMODProject/GGJ22_Alice/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637790061708217558
+  lastModified: 637791435425864540
   FileSizes:
   - Name: Desktop
-    Value: 754
+    Value: 1432
   Exists: 1
+--- !u!114 &1359932274032812448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voice/Voix 1
+  m_EditorClassIdentifier: 
+  Path: event:/Voice/Voix 1
+  Guid:
+    Data1: -496093922
+    Data2: 1181556318
+    Data3: -1534761333
+    Data4: -124763608
+  Banks:
+  - {fileID: -6310162374592498044}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3050
+--- !u!114 &2360261087244332681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voice/Voix 2
+  m_EditorClassIdentifier: 
+  Path: event:/Voice/Voix 2
+  Guid:
+    Data1: 259828758
+    Data2: 1106738474
+    Data3: -1346876497
+    Data4: 278039048
+  Banks:
+  - {fileID: -6310162374592498044}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4405
+--- !u!114 &2942114386369543378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voice/Voix 4
+  m_EditorClassIdentifier: 
+  Path: event:/Voice/Voix 4
+  Guid:
+    Data1: 993522386
+    Data2: 1251070715
+    Data3: 710979984
+    Data4: 906774327
+  Banks:
+  - {fileID: -6310162374592498044}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2901
+--- !u!114 &3199011105151283377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/WarAmbiance/Canon
+  m_EditorClassIdentifier: 
+  Path: event:/WarAmbiance/Canon
+  Guid:
+    Data1: 1738814008
+    Data2: 1239916564
+    Data3: 453605766
+    Data4: -550308703
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4058172453879740652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/WarAmbiance/Fire
+  m_EditorClassIdentifier: 
+  Path: event:/WarAmbiance/Fire
+  Guid:
+    Data1: -1507085147
+    Data2: 1324089352
+    Data3: -1373601371
+    Data4: -1409907700
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4187346955221437689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musics/Music1
+  m_EditorClassIdentifier: 
+  Path: event:/Musics/Music1
+  Guid:
+    Data1: 834054762
+    Data2: 1262241857
+    Data3: -835251279
+    Data4: 1754648982
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6879067330970810011}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 349000
+--- !u!114 &6879067330970810011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music1/Phase
+  m_EditorClassIdentifier: 
+  Name: Phase
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3992702753
+    data2: 1747887780
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Intro
+  - Phase 1
+  - Boss
+  Exists: 1
+--- !u!114 &8155754262666167654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/WarAmbiance/SingleFire
+  m_EditorClassIdentifier: 
+  Path: event:/WarAmbiance/SingleFire
+  Guid:
+    Data1: -1861587737
+    Data2: 1173027454
+    Data3: 916939664
+    Data4: -1890678328
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
