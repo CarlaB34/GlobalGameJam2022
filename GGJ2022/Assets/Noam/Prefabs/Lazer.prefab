@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4215981210656194046}
   - component: {fileID: 4215981210656194045}
   - component: {fileID: 8552419596025803987}
+  - component: {fileID: 7506182210959312582}
   m_Layer: 0
   m_Name: Lazer
   m_TagString: Lazer
@@ -79,6 +80,36 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7506182210959312582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215981210656194043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1031603550
+      Data2: 1322178155
+      Data3: 1124019106
+      Data4: -1733628847
+    Path: event:/Alice_Attack
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 20
+  OverrideMaxDistance: 50
 --- !u!1 &4215981210871890907
 GameObject:
   m_ObjectHideFlags: 0

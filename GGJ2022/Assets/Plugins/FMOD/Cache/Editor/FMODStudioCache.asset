@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9111221050362024206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/B_Atack
+  m_EditorClassIdentifier: 
+  Path: event:/B_Atack
+  Guid:
+    Data1: 1559097598
+    Data2: 1243696118
+    Data3: -227973213
+    Data4: -910486347
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1472
 --- !u!114 &-8412939369713171549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,11 +42,38 @@ MonoBehaviour:
   Path: FMODProject/GGJ22_Alice/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637791513377503300
+  lastModified: 637791516671075168
   FileSizes:
   - Name: Desktop
-    Value: 5467072
+    Value: 10212416
   Exists: 1
+--- !u!114 &-7638287206814299314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/B_Scream
+  m_EditorClassIdentifier: 
+  Path: event:/B_Scream
+  Guid:
+    Data1: 903053099
+    Data2: 1155639630
+    Data3: 1965787832
+    Data4: -1512398016
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &-6886540144097386760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,6 +148,114 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3456
+--- !u!114 &-3817624782554922101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Click
+  m_EditorClassIdentifier: 
+  Path: event:/Click
+  Guid:
+    Data1: 240874669
+    Data2: 1316443715
+    Data3: 1928589995
+    Data4: 193782212
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 321
+--- !u!114 &-2797761867807165242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Carrot_Grow
+  m_EditorClassIdentifier: 
+  Path: event:/Carrot_Grow
+  Guid:
+    Data1: 1777099484
+    Data2: 1324814280
+    Data3: -664991851
+    Data4: -21631518
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 551
+--- !u!114 &-2012544399903247342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Alice_TakeDamage
+  m_EditorClassIdentifier: 
+  Path: event:/Alice_TakeDamage
+  Guid:
+    Data1: 1343947972
+    Data2: 1173242848
+    Data3: -749274207
+    Data4: -1145208627
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 450
+--- !u!114 &-1989717644812331611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/B_Steps
+  m_EditorClassIdentifier: 
+  Path: event:/B_Steps
+  Guid:
+    Data1: -1628063412
+    Data2: 1174585977
+    Data3: 27692428
+    Data4: 1466551807
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 613
 --- !u!114 &-458043439281635322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,6 +310,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4629
+--- !u!114 &-9133136133489308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Rabbit_CarrotSpell
+  m_EditorClassIdentifier: 
+  Path: event:/Rabbit_CarrotSpell
+  Guid:
+    Data1: -61158142
+    Data2: 1128963017
+    Data3: 68870806
+    Data4: -919404376
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3816
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,12 +365,23 @@ MonoBehaviour:
   - {fileID: 2942114386369543378}
   - {fileID: -199544079398816154}
   - {fileID: -5911852421135584484}
+  - {fileID: -9133136133489308}
+  - {fileID: -7638287206814299314}
+  - {fileID: -1989717644812331611}
+  - {fileID: 7922542595951510862}
+  - {fileID: 9169432957226751338}
+  - {fileID: -3817624782554922101}
+  - {fileID: -2012544399903247342}
+  - {fileID: 5823280960847712325}
+  - {fileID: 8599399125372360039}
+  - {fileID: -2797761867807165242}
+  - {fileID: -9111221050362024206}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8412939369713171549}
   StringsBanks:
   - {fileID: 558612566751455179}
-  cacheTime: 637791513377513269
+  cacheTime: 637791516671105089
   cacheVersion: 10
 --- !u!114 &558612566751455179
 MonoBehaviour:
@@ -198,10 +398,10 @@ MonoBehaviour:
   Path: FMODProject/GGJ22_Alice/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637791513377513269
+  lastModified: 637791516671105089
   FileSizes:
   - Name: Desktop
-    Value: 1432
+    Value: 1970
   Exists: 1
 --- !u!114 &1359932274032812448
 MonoBehaviour:
@@ -366,6 +566,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 349000
+--- !u!114 &5823280960847712325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Alice_Steps
+  m_EditorClassIdentifier: 
+  Path: event:/Alice_Steps
+  Guid:
+    Data1: -1845182508
+    Data2: 1307364213
+    Data3: 946028698
+    Data4: 750518455
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1073
 --- !u!114 &6879067330970810011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,6 +620,33 @@ MonoBehaviour:
   - Phase 1
   - Boss
   Exists: 1
+--- !u!114 &7922542595951510862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musics/MusicJukebox
+  m_EditorClassIdentifier: 
+  Path: event:/Musics/MusicJukebox
+  Guid:
+    Data1: 1486732879
+    Data2: 1268241031
+    Data3: -1585896317
+    Data4: 468238946
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 287000
 --- !u!114 &8155754262666167654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,3 +674,57 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &8599399125372360039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Rabbit_Step
+  m_EditorClassIdentifier: 
+  Path: event:/Rabbit_Step
+  Guid:
+    Data1: -694610730
+    Data2: 1218431291
+    Data3: -265451336
+    Data4: 1194600040
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 341
+--- !u!114 &9169432957226751338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Alice_Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Alice_Attack
+  Guid:
+    Data1: 1031603550
+    Data2: 1322178155
+    Data3: 1124019106
+    Data4: -1733628847
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 800
