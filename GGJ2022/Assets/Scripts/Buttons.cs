@@ -18,6 +18,11 @@ public class Buttons : MonoBehaviour
     private bool isTransitionning;
     private float timeBeforeNextScene = 1;
 
+    private void Start()
+    {
+        sampleMenu.SetActive(true);
+        credits.SetActive(false);
+    }
     private void Update()
     {
         if(isTransitionning)
@@ -46,5 +51,14 @@ public class Buttons : MonoBehaviour
     {
         credits.SetActive(false);
         sampleMenu.SetActive(true);
+    }
+
+    public void ReturnMenu()
+    {
+        isTransitionning = true;
+    }
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

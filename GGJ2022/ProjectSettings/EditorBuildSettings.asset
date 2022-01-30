@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Devs/L3.unity
     guid: d58f07d8cd1813c48a6dc8f2b6d2a44e
+  - enabled: 1
+    path: Assets/Scene/Devs/End.unity
+    guid: fd98dc304e7acb544b64782ccc1ecc23
   m_configObjects: {}
