@@ -210,7 +210,7 @@ MonoBehaviour:
   timeToInstantiateBullet: 0
   bullet: {fileID: 0}
   maxLife: 30
-  distanceToStop: 2
+  distanceToStop: 1.5
   isDistanceEnnemy: 0
   contactAttack: {fileID: 6501073625374465043}
   particleHitLazer: {fileID: 7887301734148523371, guid: d1431b486de813241a805d39461aba00, type: 3}
