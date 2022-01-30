@@ -17,7 +17,7 @@ public class WinCondition : MonoBehaviour
 
     [SerializeField]
     private string nameOfNextScene;
-    // Start is called before the first frame update
+    
     void Start()
     {
         numberOfEnnemiesToWin = 5;

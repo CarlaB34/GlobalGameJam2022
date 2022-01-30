@@ -52,13 +52,15 @@ public class PlayerControlledPointAndClick : MonoBehaviour
     [SerializeField]
     private bool m_IsVoice = false;
 
-    private int m_PassageDansScene = 0;
+    private static int m_PassageDansScene = 0;
 
     //[SerializeField]
     //private Animator m_PlayerAnimator;
 
     private void Start()
     {
+        Debug.Log("passage augmente pour int0 start: " + m_PassageDansScene);
+
         m_InteractibleObject[1].SetActive(false);
         Debug.Log("winstart condition dans PC : " + WinCondition.isWinning);
         m_InteractibleObject[2].SetActive(false);
@@ -72,36 +74,39 @@ public class PlayerControlledPointAndClick : MonoBehaviour
         Debug.Log("passage augmente pour int0: " + m_PassageDansScene);
         Debug.Log("winupdate condition dans PC : " + WinCondition.isWinning);
 
-        if (WinCondition.isWinning == true)
+        if (WinCondition.isWinning == true && m_PassageDansScene == 0)
         {
-            if (m_PassageDansScene == 0)
-            {
-                m_InteractibleObject[1].SetActive(true);
+            m_InteractibleObject[1].SetActive(true);
+                m_PassageDansScene += 1;
                 WinCondition.isWinning = false;
-               
                 Debug.Log("interagible1");
-            }
-            if (m_PassageDansScene == 1)
-            {
-                Debug.Log("interagible2");
-                m_InteractibleObject[2].SetActive(true);
-                //WinCondition.isWinning = false;
-                Debug.Log("interagible2");
-            }
-            m_PassageDansScene += 1;
+            //if (m_PassageDansScene == 1)
+            //{
+            //    Debug.Log("interagible2");
+            //    m_InteractibleObject[2].SetActive(true);
+            //    //WinCondition.isWinning = false;
+            //    Debug.Log("interagible2");
+            //}
 
         }
-
-        /*if(m_Player.velocity != Vector3.zero)
+        if (WinCondition.isWinning == true && m_PassageDansScene == 1)
         {
-            m_PlayerAnimator.SetBool("isWalking", true);
+            Debug.Log("interagible2");
+            m_InteractibleObject[2].SetActive(true);
+            //WinCondition.isWinning = false;
+            Debug.Log("interagible2");
         }
-        else if (m_Player.velocity == Vector3.zero)
-        {
-            m_PlayerAnimator.SetBool("isWalking", false);
-
-        }*/
     }
+            /*if(m_Player.velocity != Vector3.zero)
+            {
+                m_PlayerAnimator.SetBool("isWalking", true);
+            }
+            else if (m_Player.velocity == Vector3.zero)
+            {
+                m_PlayerAnimator.SetBool("isWalking", false);
+
+            }*/
+        
 
     private void ClickMove()
     {
