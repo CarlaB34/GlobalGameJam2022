@@ -12,6 +12,8 @@ public class CarotField : MonoBehaviour
 
     public float timeToDoAttack;
 
+    public Animator RabbitAnimator;
+
 
     // Start is called before the first frame update
     void Start()
@@ -29,17 +31,31 @@ public class CarotField : MonoBehaviour
             push.SetActive(false);
         }
 
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            RabbitAnimator.SetBool("HasField", true);
+
+    
+            Instantiate(field, this.transform.position, Quaternion.identity);
+      
+        }
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
-            Instantiate(field, this.transform.position, Quaternion.identity);
-
+          
+            RabbitAnimator.SetBool("HasField", false);
         }
 
-        if (Input.GetKeyUp(KeyCode.Mouse1))
+        if (Input.GetKeyDown(KeyCode.Mouse1))
         {
-            
+            RabbitAnimator.SetBool("IsToupie", true);
             timeToDoAttack = 0.25f;
             push.SetActive(true);
+
+        }
+        if (Input.GetKeyUp(KeyCode.Mouse1))
+        {
+            RabbitAnimator.SetBool("IsToupie", false);
+           
 
         }
     }

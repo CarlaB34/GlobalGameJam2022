@@ -209,10 +209,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   originAttack: {fileID: 0}
-  speed: 6
+  speed: 4
   timeToInstantiateBullet: 0
   bullet: {fileID: 0}
-  maxLife: 30
+  maxLife: 15
   distanceToStop: 1.5
   isDistanceEnnemy: 0
   contactAttack: {fileID: 6501073625374465043}

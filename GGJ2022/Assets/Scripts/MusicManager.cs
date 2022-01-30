@@ -18,5 +18,13 @@ public class MusicManager : MonoBehaviour
     void Update()
     {
         MusicEmitter.SetParameter("Phase", MusicPhase);
+        if (WinCondition.numberOfEnnemiesToWin <= 50 && WinCondition.numberOfEnnemiesToWin > 10)
+        {
+            MusicPhase = 1;
+        }
+        if (WinCondition.numberOfEnnemiesToWin <= 20)
+        {
+            MusicPhase = 2;
+        }
     }
 }
