@@ -28,7 +28,7 @@ public class WalkControl : MonoBehaviour
         if (!Stopped)
         {
             TimeLeft -= Time.deltaTime;
-            Debug.Log("Time : " + TimeLeft);
+            //Debug.Log("Time : " + TimeLeft);
             if (TimeLeft <= 0.0f)
             {
 
