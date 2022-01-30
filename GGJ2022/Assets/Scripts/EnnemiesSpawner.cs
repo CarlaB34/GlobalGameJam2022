@@ -15,6 +15,7 @@ public class EnnemiesSpawner : MonoBehaviour
     [SerializeField]
     private GameObject[] ennemies;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +28,7 @@ public class EnnemiesSpawner : MonoBehaviour
         timerToInstantiate -= Time.deltaTime;
         if (timerToInstantiate <= 0)
         {
-
+            
             Instantiate((ennemies[Random.Range(0, ennemies.Length - 1)]), (spawners[Random.Range(0, spawners.Length - 1)].transform.position), Quaternion.identity);
             timerToInstantiate = originalTimerToInstantiate;
            

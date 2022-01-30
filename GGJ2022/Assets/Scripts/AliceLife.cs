@@ -66,7 +66,7 @@ public class AliceLife : MonoBehaviour
 
     void Death()
     {
-        WinCondition.isWinningLvlOne = false;
+        WinCondition.isWinning = false;
         isDead = true;
         Instantiate(particleDeath, this.transform.position, Quaternion.identity);
         GameObject.Destroy(AliceVisual);

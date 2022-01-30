@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{bf3ffa76-429e-4d7f-a9fb-51f21cb15c1f}">
+		<property name="volume">
+			<value>-3.5</value>
+		</property>
+		<property name="name">
+			<value>Voice</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{b348aaeb-14a2-406b-8181-fe74ab1644f1}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{9d79ca95-f476-4650-a22b-e11dd8f5ebae}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{3a4c0b98-5695-45a5-90a8-e98f50af2999}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{b348aaeb-14a2-406b-8181-fe74ab1644f1}">
+		<relationship name="effects">
+			<destination>{5893099d-5ef3-442c-ad1d-89abc3b77000}</destination>
+			<destination>{8b7427e2-39a4-416e-a31f-72d0b1cf7472}</destination>
+			<destination>{37478571-b887-4dd8-a07a-6e5b29abd619}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{9d79ca95-f476-4650-a22b-e11dd8f5ebae}" />
+	<object class="MultibandEqEffect" id="{5893099d-5ef3-442c-ad1d-89abc3b77000}">
+		<property name="filterTypeA">
+			<value>0</value>
+		</property>
+		<property name="filterTypeB">
+			<value>9</value>
+		</property>
+		<property name="filterTypeC">
+			<value>9</value>
+		</property>
+		<property name="frequencyB">
+			<value>4000</value>
+		</property>
+		<property name="frequencyC">
+			<value>8500</value>
+		</property>
+		<property name="qualityB">
+			<value>4</value>
+		</property>
+		<property name="qualityC">
+			<value>4.9000001</value>
+		</property>
+		<property name="gainB">
+			<value>-12</value>
+		</property>
+		<property name="gainC">
+			<value>-15.5</value>
+		</property>
+	</object>
+	<object class="SFXReverbEffect" id="{8b7427e2-39a4-416e-a31f-72d0b1cf7472}">
+		<property name="decayTime">
+			<value>750</value>
+		</property>
+		<property name="lateDelay">
+			<value>10.5</value>
+		</property>
+		<property name="HFReference">
+			<value>1550</value>
+		</property>
+		<property name="HFDecayRatio">
+			<value>46.5</value>
+		</property>
+		<property name="wetLevel">
+			<value>-27</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{37478571-b887-4dd8-a07a-6e5b29abd619}" />
+</objects>

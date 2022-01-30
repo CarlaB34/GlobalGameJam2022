@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{bf752360-936d-448e-b4b0-00731e8e97b6}">
+		<property name="volume">
+			<value>-1.5</value>
+		</property>
+		<property name="name">
+			<value>War</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{43870e26-76f7-4c68-97cb-560e1f6b7bd3}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{d09d327e-3273-447b-82f6-75eca8cd6834}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{3a4c0b98-5695-45a5-90a8-e98f50af2999}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{43870e26-76f7-4c68-97cb-560e1f6b7bd3}">
+		<relationship name="effects">
+			<destination>{170efca8-9ba2-4a9f-8a9f-c25485afd300}</destination>
+			<destination>{7b369020-e7f7-4416-a589-de007241cf6a}</destination>
+			<destination>{fd3dc04a-5d2a-4f11-959d-af5787ecee3d}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{d09d327e-3273-447b-82f6-75eca8cd6834}" />
+	<object class="SFXReverbEffect" id="{170efca8-9ba2-4a9f-8a9f-c25485afd300}">
+		<property name="decayTime">
+			<value>4000</value>
+		</property>
+		<property name="wetLevel">
+			<value>-18.5</value>
+		</property>
+	</object>
+	<object class="MultibandEqEffect" id="{7b369020-e7f7-4416-a589-de007241cf6a}">
+		<property name="filterTypeA">
+			<value>3</value>
+		</property>
+		<property name="filterTypeB">
+			<value>9</value>
+		</property>
+		<property name="filterTypeD">
+			<value>9</value>
+		</property>
+		<property name="frequencyA">
+			<value>1427.7749</value>
+		</property>
+		<property name="frequencyB">
+			<value>104.926758</value>
+		</property>
+		<property name="frequencyD">
+			<value>5377.05811</value>
+		</property>
+		<property name="qualityA">
+			<value>0.434896529</value>
+		</property>
+		<property name="gainB">
+			<value>-0.517240524</value>
+		</property>
+		<property name="gainD">
+			<value>-3.62068939</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{fd3dc04a-5d2a-4f11-959d-af5787ecee3d}" />
+</objects>
