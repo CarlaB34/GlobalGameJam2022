@@ -7,6 +7,9 @@
 		<property name="name">
 			<value>MusicWar</value>
 		</property>
+		<relationship name="masters">
+			<destination>{057b2bdc-37c7-45d5-a6d5-12cb9f8a926a}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{55d8f5c3-8c19-4bb1-ad51-c954a86f8dde}</destination>
 		</relationship>
