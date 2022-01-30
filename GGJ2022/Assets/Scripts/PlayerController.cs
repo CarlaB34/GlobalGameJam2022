@@ -12,7 +12,8 @@ public class PlayerController : MonoBehaviour
 
     public Transform view;
 
-   
+    [SerializeField]
+    private Animator rabbitAnimator;
 
    
 
@@ -33,52 +34,52 @@ public class PlayerController : MonoBehaviour
         {
             moveDir.z = 1;
 
-       
+            rabbitAnimator.SetBool("IsWalking", true);
 
-         
+
 
         }
 
         if (Input.GetKey(KeyCode.Q))
         {
             moveDir.z = -1;
-   
+            rabbitAnimator.SetBool("IsWalking", true);
         }
 
         // On recupère les inputs haut/bas et on applique sur l'axe X
         if (Input.GetKey(KeyCode.S))
         {
             moveDir.x = 1;
-          
+            rabbitAnimator.SetBool("IsWalking", true);
         }
         if (Input.GetKey(KeyCode.Z))
         {
             moveDir.x = -1;
-          
+            rabbitAnimator.SetBool("IsWalking", true);
         }
 
         if (Input.GetKeyUp(KeyCode.Z))
         {
             moveDir.x = -1;
-           
+            rabbitAnimator.SetBool("IsWalking", false);
         }
 
         if (Input.GetKeyUp(KeyCode.Q))
         {
             moveDir.x = -1;
-           
+            rabbitAnimator.SetBool("IsWalking", false);
         }
 
         if (Input.GetKeyUp(KeyCode.S))
         {
             moveDir.x = -1;
-           
+            rabbitAnimator.SetBool("IsWalking", false);
         }
 
         if (Input.GetKeyUp(KeyCode.D))
         {
             moveDir.x = -1;
-         
+            rabbitAnimator.SetBool("IsWalking", false);
         }
 
 
