@@ -15,10 +15,13 @@ public class AliceIABehaviour : MonoBehaviour
     private float[] distances;
     [SerializeField]
     private float[] speeds;
+    [SerializeField]
+    private Animator aliceAnimator;
 
     // Start is called before the first frame update
     void Start()
     {
+
         navMesh = GetComponent<NavMeshAgent>();
         Rabbit = GameObject.FindWithTag("Rabbit");
     }
@@ -33,17 +36,24 @@ public class AliceIABehaviour : MonoBehaviour
         if (distancePlayer < distances[0])
         {
             navMesh.speed = speeds[0];
+            aliceAnimator.SetBool("IsWalking", false);
         }
 
         if (distancePlayer < distances[1] && distancePlayer >= distances[0])
         {
             navMesh.speed = speeds[1];
+            aliceAnimator.SetBool("IsWalking", true);
         }
 
         if (distancePlayer < distances[2] && distancePlayer >= distances[1])
         {
             navMesh.speed = speeds[2];
+            aliceAnimator.SetBool("IsWalking", true);
         }
+
+
+
+     
 
     }
 }

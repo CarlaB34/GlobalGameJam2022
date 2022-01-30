@@ -16,11 +16,14 @@ public class WinCondition : MonoBehaviour
     private GameObject tr2;
 
     [SerializeField]
+    private int originalNumberToKill;
+
+    [SerializeField]
     private string nameOfNextScene;
     
     void Start()
     {
-        numberOfEnnemiesToWin = 5;
+        numberOfEnnemiesToWin = originalNumberToKill;
         isWinning = false;
         Debug.Log("win bool start: " + isWinning);
 
