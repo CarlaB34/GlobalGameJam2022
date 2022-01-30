@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class WinCondition : MonoBehaviour
 {
-    public static bool isWinning;
+    public static bool isWinningLvlOne;
+    public static bool isWinningLvlTwo;
+    public static bool isWinningLvlThree;
 
     public static int numberOfEnnemiesToWin;
 
@@ -14,6 +16,9 @@ public class WinCondition : MonoBehaviour
 
     [SerializeField]
     private GameObject tr2;
+
+    [SerializeField]
+    private int numberOfLevel;
 
     [SerializeField]
     private string nameOfNextScene;
@@ -48,7 +53,19 @@ public class WinCondition : MonoBehaviour
 
     void Win()
     {
-        isWinning = true;
+        if(numberOfLevel == 1)
+        {
+            isWinningLvlOne = true;
+        }
+        if (numberOfLevel == 2)
+        {
+            isWinningLvlTwo = true;
+        }
+        if (numberOfLevel == 3)
+        {
+            isWinningLvlThree = true;
+        }
+
         hasWinState = true;
       
     }
