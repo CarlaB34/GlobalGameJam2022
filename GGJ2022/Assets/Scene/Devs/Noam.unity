@@ -8020,7 +8020,7 @@ PrefabInstance:
       objectReference: {fileID: 1485127764711007657, guid: 475842e73b5c01f47ac16a98c91dab9d, type: 3}
     - target: {fileID: 2134870197701137123, guid: a72608c98da100c49b79e97fb30b4dfe, type: 3}
       propertyPath: originalTimerToInstantiate
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2134870197200141385, guid: a72608c98da100c49b79e97fb30b4dfe, type: 3}

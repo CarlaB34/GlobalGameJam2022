@@ -59,6 +59,6 @@ public class WinCondition : MonoBehaviour
     {
         isWinning = true;
         hasWinState = true;
-      
+        SceneManager.LoadScene("End");
     }
 }

@@ -60,8 +60,8 @@ public class PlayerControlledPointAndClick : MonoBehaviour
     private void Start()
     {
        
-        m_InteractibleObject[1].SetActive(false);
-        m_InteractibleObject[2].SetActive(false);
+        //m_InteractibleObject[1].SetActive(false);
+        //m_InteractibleObject[2].SetActive(false);
     }
 
     private void Update()
@@ -72,12 +72,12 @@ public class PlayerControlledPointAndClick : MonoBehaviour
         VoiceActiveUtile();
 
         #region switch scene with element
-        if (WinCondition.isWinning == true && m_PassageDansScene == 0)
-        {
-            m_InteractibleObject[2].SetActive(true);
-               // m_PassageDansScene += 1;
-                WinCondition.isWinning = false;
-        }
+        //if (WinCondition.isWinning == true && m_PassageDansScene == 0)
+        //{
+        //    m_InteractibleObject[1].SetActive(true);
+        //    // m_PassageDansScene += 1;
+        //    WinCondition.isWinning = false;
+        //}
         /*if (WinCondition.isWinning == true && m_PassageDansScene == 1)
         {
          
@@ -116,13 +116,13 @@ public class PlayerControlledPointAndClick : MonoBehaviour
 
     private void AnimMove()
     {
-        if(m_PlayerNav.velocity != Vector3.zero)
+        if(m_PlayerNav.velocity.magnitude >= 0.85)
         {
             m_PlayerAnimator.SetBool("IsWalking", true);
         }
         else if (this.transform.position.x == m_TargetDestination.transform.position.x && this.transform.position.z == m_TargetDestination.transform.position.z)
         {
-            Debug.Log("Alice est a la meme position que la destination!");
+           // Debug.Log("Alice est a la meme position que la destination!");
             m_PlayerAnimator.SetBool("IsWalking", false);
         }
     }
@@ -141,15 +141,15 @@ public class PlayerControlledPointAndClick : MonoBehaviour
                     //m_IsVoice = true;
                     m_Voice1.Play();
                     m_Voice1.IsPlaying();
-                    m_IsVoice = true;
+                   //m_IsVoice = true;
                     break;
 
                 //element 2
                 case "JournalIntime":
                     m_Voice3.Play();
                     m_Voice3.IsPlaying();
-                    m_IsVoice = true;
-                    //Debug.Log("journal");
+                   // m_IsVoice = true;
+                    Debug.Log("journal");
                     break;
 
                 //element 3
@@ -157,7 +157,7 @@ public class PlayerControlledPointAndClick : MonoBehaviour
                     //Debug.Log("livre");
                     m_Voice4.Play();
                     m_Voice4.IsPlaying();
-                    m_IsVoice = true;
+                    //m_IsVoice = true;
                     break;
 
             }
@@ -201,7 +201,7 @@ public class PlayerControlledPointAndClick : MonoBehaviour
             if (m_Voice1.IsPlaying() == false)
             {
                 //Debug.Log("papaS");
-                SceneManager.LoadScene("Noam");
+               // SceneManager.LoadScene("Noam");
             }
         }
         if (m_IsVoice == true && m_Voice3.IsActive == true)
@@ -209,7 +209,7 @@ public class PlayerControlledPointAndClick : MonoBehaviour
             if (m_Voice3.IsPlaying() == false)
             {
                 // Debug.Log("journalS");
-                SceneManager.LoadScene("L2");
+                //SceneManager.LoadScene("L2");
             }
         }
         if (m_IsVoice == true && m_Voice4.IsActive == true)
