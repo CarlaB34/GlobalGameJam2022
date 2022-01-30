@@ -56,12 +56,17 @@ public class AliceLife : MonoBehaviour
         {
             SceneManager.LoadScene(nameOfNextScene);
         }
-        HeartsUi[life].SetActive(false);
+
+        if(life < 6)
+        {
+            HeartsUi[life].SetActive(false);
+        }
+        
     }
 
     void Death()
     {
-        WinCondition.isWinning = false;
+        WinCondition.isWinningLvlOne = false;
         isDead = true;
         Instantiate(particleDeath, this.transform.position, Quaternion.identity);
         GameObject.Destroy(AliceVisual);
