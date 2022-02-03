@@ -12,7 +12,7 @@ namespace FMODUnity
 
         [Obsolete("Use the EventReference field instead")]
         public string Event = "";
-
+        
         public EmitterGameEvent PlayEvent = EmitterGameEvent.None;
         public EmitterGameEvent StopEvent = EmitterGameEvent.None;
         public bool AllowFadeout = true;

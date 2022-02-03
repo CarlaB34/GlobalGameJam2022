@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Devs/Carla.unity
     guid: 0366a7aa0a41cc744a41785d21c416a2
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/Devs/Noam.unity
     guid: ac641e8d0cb598a46b27e9cdfa1654af
   - enabled: 0
