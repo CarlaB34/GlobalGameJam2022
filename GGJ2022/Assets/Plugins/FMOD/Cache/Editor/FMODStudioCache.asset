@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: FMODProject/GGJ22_Alice/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637791632880000000
+  lastModified: 637795055100000000
   FileSizes:
   - Name: Desktop
-    Value: 10212416
+    Value: 10450208
   Exists: 1
 --- !u!114 &-7638287206814299314
 MonoBehaviour:
@@ -74,6 +74,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &-7277585941729291032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/EnnemieDie
+  m_EditorClassIdentifier: 
+  Path: event:/EnnemieDie
+  Guid:
+    Data1: 1474614792
+    Data2: 1099338295
+    Data3: 738746017
+    Data4: -1437425657
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 150
 --- !u!114 &-6886540144097386760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,11 +123,11 @@ MonoBehaviour:
   - {fileID: -8412939369713171549}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 155040
+  Length: 240000
 --- !u!114 &-6310162374592498044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,7 +143,7 @@ MonoBehaviour:
   Path: FMODProject/GGJ22_Alice/Build/Desktop/Voice.bank
   Name: Voice
   StudioPath: bank:/Voice
-  lastModified: 637791615160000000
+  lastModified: 637795055100000000
   FileSizes:
   - Name: Desktop
     Value: 187232
@@ -255,7 +282,61 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 613
+  Length: 1000
+--- !u!114 &-1298653554380698401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GameOver
+  m_EditorClassIdentifier: 
+  Path: event:/GameOver
+  Guid:
+    Data1: 957705540
+    Data2: 1119608642
+    Data3: -520224600
+    Data4: 315095458
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5793
+--- !u!114 &-582788171858934086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Rabbit_Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Rabbit_Attack
+  Guid:
+    Data1: -154024846
+    Data2: 1313727163
+    Data3: -2032559474
+    Data4: 1692555418
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 754
 --- !u!114 &-458043439281635322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,7 +390,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 4629
+  Length: 8004
 --- !u!114 &-9133136133489308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -376,12 +457,16 @@ MonoBehaviour:
   - {fileID: 8599399125372360039}
   - {fileID: -2797761867807165242}
   - {fileID: -9111221050362024206}
+  - {fileID: -7277585941729291032}
+  - {fileID: -1298653554380698401}
+  - {fileID: -582788171858934086}
+  - {fileID: 5178146993647301002}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8412939369713171549}
   StringsBanks:
   - {fileID: 558612566751455179}
-  cacheTime: 637791632880000000
+  cacheTime: 637795055100000000
   cacheVersion: 10
 --- !u!114 &558612566751455179
 MonoBehaviour:
@@ -398,10 +483,10 @@ MonoBehaviour:
   Path: FMODProject/GGJ22_Alice/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637791632880000000
+  lastModified: 637795055100000000
   FileSizes:
   - Name: Desktop
-    Value: 1970
+    Value: 2362
   Exists: 1
 --- !u!114 &1359932274032812448
 MonoBehaviour:
@@ -565,7 +650,34 @@ MonoBehaviour:
   - {fileID: 6879067330970810011}
   MinDistance: 1
   MaxDistance: 20
-  Length: 349000
+  Length: 348000
+--- !u!114 &5178146993647301002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Old_B_Steps
+  m_EditorClassIdentifier: 
+  Path: event:/Old_B_Steps
+  Guid:
+    Data1: -1598324266
+    Data2: 1206866332
+    Data3: 1714978737
+    Data4: 1827941506
+  Banks:
+  - {fileID: -8412939369713171549}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 613
 --- !u!114 &5823280960847712325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -646,7 +758,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 287000
+  Length: 288000
 --- !u!114 &8155754262666167654
 MonoBehaviour:
   m_ObjectHideFlags: 0

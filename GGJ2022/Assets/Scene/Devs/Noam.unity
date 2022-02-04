@@ -15,30 +15,30 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogColor: {r: 0.754717, g: 0.5525098, b: 0.5525098, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.19
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0.91
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
-  m_HaloStrength: 0.5
+  m_SubtractiveShadowColor: {r: 0.3823425, g: 0.4125131, b: 0.5660378, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 6aac568ebf8b44c448ae2317cc3f7c3d, type: 2}
+  m_HaloStrength: 0.494
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
-  m_ReflectionBounces: 1
+  m_ReflectionBounces: 5
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.23662959, g: 0.09743935, b: 0.101171464, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -107,8 +107,8 @@ NavMeshSettings:
     serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.1
-    agentHeight: 23.77
-    agentSlope: 5.3
+    agentHeight: 23.95
+    agentSlope: 4.6
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
@@ -1984,7 +1984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6800b843db6daee4fa207988c04915a6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.052067
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6800b843db6daee4fa207988c04915a6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16498,8 +16498,60 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 44.071747, y: 6.08476, z: 4.964836}
-  m_Center: {x: -1.0176964, y: 2.54238, z: -53.15009}
+  m_Size: {x: 44.071747, y: 6.08476, z: 7.344242}
+  m_Center: {x: -1.0176964, y: 2.54238, z: -51.96039}
+--- !u!65 &1236774668
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236774666}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.133538, y: 7.9, z: 12.621938}
+  m_Center: {x: 7.538278, y: 0, z: -5.81097}
+--- !u!65 &1236774669
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236774666}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.895994, y: 7.9, z: 12.621938}
+  m_Center: {x: -10.5539465, y: 0, z: -5.81097}
+--- !u!65 &1236774670
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236774666}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.275858, y: 5.433318, z: 57.626}
+  m_Center: {x: 17.66771, y: -0.28334093, z: -22.38316}
+--- !u!65 &1236774671
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236774666}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.8068314, y: 9.14081, z: 54.398693}
+  m_Center: {x: -22.080025, y: -2.1370864, z: -23.996813}
 --- !u!65 &1236774672
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16511,8 +16563,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 44.071747, y: 6.08476, z: 2.847351}
-  m_Center: {x: -1.0176964, y: 2.54238, z: 3.11}
+  m_Size: {x: 44.071747, y: 6.08476, z: 2.7802207}
+  m_Center: {x: -1.0176964, y: 2.54238, z: 3.1435647}
 --- !u!1 &1253459311
 GameObject:
   m_ObjectHideFlags: 0
@@ -17595,7 +17647,7 @@ PrefabInstance:
       objectReference: {fileID: 214377617}
     - target: {fileID: 2134870197059964839, guid: a72608c98da100c49b79e97fb30b4dfe, type: 3}
       propertyPath: distances.Array.data[0]
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2134870197200141384, guid: a72608c98da100c49b79e97fb30b4dfe, type: 3}
       propertyPath: m_Enabled
@@ -17716,6 +17768,10 @@ PrefabInstance:
     - target: {fileID: 3747734129560624986, guid: 5123529b3d178c74a9e272c261102a26, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3747734129560624987, guid: 5123529b3d178c74a9e272c261102a26, type: 3}
+      propertyPath: speed
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3747734129560624987, guid: 5123529b3d178c74a9e272c261102a26, type: 3}
       propertyPath: rabbitAnimator

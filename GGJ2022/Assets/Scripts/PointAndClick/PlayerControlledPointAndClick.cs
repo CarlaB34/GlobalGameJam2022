@@ -122,11 +122,14 @@ public class PlayerControlledPointAndClick : MonoBehaviour
 
     private void AnimMove()
     {
-        if(m_PlayerNav.velocity.magnitude >= 0.85)
+        //0.85 pour premier anim
+        if(m_PlayerNav.velocity.magnitude >= 0.7)
         {
             m_PlayerAnimator.SetBool("IsWalking", true);
         }
-        else if (this.transform.position.x == m_TargetDestination.transform.position.x && this.transform.position.z == m_TargetDestination.transform.position.z)
+        //else if(m_PlayerNav.velocity == Vector3.zero)
+        //si la position en x du joueur et egal a la position en x de ma target alors j'arrete l'anim
+        else if (m_PlayerNav.transform.position.x == m_TargetDestination.transform.position.x )//&& m_PlayerNav.transform.position.z == m_TargetDestination.transform.position.z)
         {
            // Debug.Log("Alice est a la meme position que la destination!");
             m_PlayerAnimator.SetBool("IsWalking", false);
