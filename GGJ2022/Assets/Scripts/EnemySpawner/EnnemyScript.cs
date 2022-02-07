@@ -43,7 +43,7 @@ public class EnnemyScript : MonoBehaviour
 
     private bool isOnSlowZone;
 
-
+   private EnnemiesSpawner ennemiesSpawner;
     // Start is called before the first frame update
     void Start()
     {
@@ -135,6 +135,15 @@ public class EnnemyScript : MonoBehaviour
         }
     }
 
+    //private void DistanceTORemoveSPawner()
+    //{
+    //    if(Alice.transform.position != this.transform.position)
+    //    {
+    //        ennemiesSpawner.Spawner[0].gameObject.transform.position = Alice.transform.position;
+
+    //        ennemiesSpawner.Spawner[Alice.].gameObject.SetActive(false);
+    //    }
+    //}
     private void Death()
     {
         WinCondition.numberOfEnnemiesToWin -= 1;

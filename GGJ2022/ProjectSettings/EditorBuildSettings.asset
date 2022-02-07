@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Devs/Noam.unity
     guid: ac641e8d0cb598a46b27e9cdfa1654af
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/Devs/L2.unity
     guid: 9fbaddae259ee9a4fa6b8e47b0f68d8b
   - enabled: 0

@@ -17,7 +17,10 @@ public class EnnemiesSpawner : MonoBehaviour
     private GameObject[] ennemies;
     public Text ennemyText;
 
-
+    public Transform[] Spawner
+    {
+        get { return spawners; }
+    }
     // Start is called before the first frame update
     void Start()
     {
